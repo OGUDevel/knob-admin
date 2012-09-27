@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib', 'lib/knob-admin')
+
+begin
+	raise '[ FATAL ]: Knob Admin must be run as root. Exiting...' unless Process.uid == 0
+rescue Exception => ex
+	puts ex.message
+	Process.exit!(true)
+else
+    require 'knob-admin'
+end
