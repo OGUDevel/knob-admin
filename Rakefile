@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "knob-admin"
   gem.homepage = "http://github.com/vertexclique/knob-admin"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: Administration console of Knob subsystem }
-  gem.description = %Q{TODO: Administration console of Knob subsystem. Used for administration tasks of Knob }
+  gem.summary = %Q{Administration console of Knob subsystem }
+  gem.description = %Q{Administration console of Knob subsystem. Used for administration tasks of Knob }
   gem.email = "mahmutbulut0@gmail.com"
   gem.authors = ["Mahmut Bulut"]
   gem.executables = ['knob-admin']
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "Knob Admin #{version}"
+  rdoc.title = "knob-admin #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

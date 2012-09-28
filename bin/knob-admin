@@ -9,4 +9,5 @@ rescue Exception => ex
 	Process.exit!(true)
 else
     require 'knob-admin'
+    KnobAdmin.main ARGV
 end
